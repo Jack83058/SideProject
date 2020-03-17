@@ -1,0 +1,154 @@
+@import './variables.scss';
+
+@for $var from 1 to 100 {
+    .h-#{$var} {
+        height: $var * 1rem;
+    }
+    .responsive-h-#{$var} {
+        height: percentage($number: $var / 100);
+    }
+    .p-#{$var} {
+        padding: $var * 1rem;
+    }
+    .responsive-p-#{$var} {
+        padding: percentage($number: $var / 100);
+    }
+    .p-t-#{$var} {
+        padding-top: $var * 1rem;
+    }
+    .responsive-p-t-#{$var} {
+        padding-top: percentage($number: $var / 100);
+    }
+    .p-l-#{$var} {
+        padding-left: $var * 1rem;
+    }
+    .responsive-p-l-#{$var} {
+        padding-left: percentage($number: $var / 100);
+    }
+    .p-r-#{$var} {
+        padding-right: $var * 1rem;
+    }
+    .responsive-p-r-#{$var} {
+        padding-right: percentage($number: $var / 100);
+    }
+    .p-b-#{$var} {
+        padding-bottom: $var * 1rem;
+    }
+    .responsive-p-b-#{$var} {
+        padding-bottom: percentage($number: $var / 100);
+    }
+}
+// CSS Helper Classes
+.text-right {
+    text-align: right;
+}
+//Align text to the right
+.text-left {
+    text-align: left;
+}
+//Align text to the left
+.text-center {
+    text-align: center;
+}
+//Align text to the center
+.text-justify {
+    text-align: justify;
+}
+.text-italic {
+    font-style: italic;
+}
+//Text will be in italic
+.text-no-wrap {
+    white-space: nowrap;
+}
+//Non wrappable text (applies white-space: nowrap)
+.text-strike {
+    text-decoration: line-through;
+}
+//Applies text-decoration: line-through
+.text-uppercase {
+    text-transform: uppercase;
+}
+//Transform text to uppercase
+.text-lowercase {
+    text-transform: lowercase;
+}
+//Transform text to lowercase
+.text-capitalize {
+    text-transform: capitalize;
+}
+//Capitalize first letter of the text
+
+.text-h1 {
+    font-size: $text-h1-size;
+    font-weight: $text-weight-light;
+    line-height: 6rem;
+    letter-spacing: -0.01562em;
+}
+.text-h2 {
+    font-size: $text-h2-size;
+    font-weight: $text-weight-light;
+    line-height: 3.75rem;
+    letter-spacing: -0.00833em;
+}
+.text-h3 {
+    font-size: $text-h3-size;
+    font-weight: $text-weight-regular;
+    line-height: 3.125rem;
+    letter-spacing: normal;
+}
+.text-h4 {
+    font-size: $text-h4-size;
+    font-weight: $text-weight-regular;
+    line-height: 2.5rem;
+    letter-spacing: 0.00735em;
+}
+.text-h5 {
+    font-size: $text-h5-size;
+    font-weight: $text-weight-regular;
+    line-height: 2rem;
+    letter-spacing: normal;
+}
+.text-h6 {
+    font-size: $text-h6-size;
+    font-weight: $text-weight-medium;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+}
+.text-subtitle1 {
+    font-size: $text-h7-size;
+    font-weight: $text-weight-regular;
+    line-height: 1.75rem;
+    letter-spacing: 0.00937em;
+}
+.text-subtitle2 {
+    font-size: $text-h8-size;
+    font-weight: $text-weight-medium;
+    line-height: 1.375rem;
+    letter-spacing: 0.00714em;
+}
+.text-body1 {
+    font-size: $text-h7-size;
+    font-weight: $text-weight-regular;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125em;
+}
+.text-body2 {
+    font-size: $text-h8-size;
+    font-weight: $text-weight-regular;
+    line-height: 1.25rem;
+    letter-spacing: 0.01786em;
+}
+
+.text-caption {
+    font-size: $text-h9-size;
+    font-weight: $text-weight-regular;
+    line-height: 1.25rem;
+    letter-spacing: 0.03333em;
+}
+.text-overline {
+    font-size: $text-h9-size;
+    font-weight: $text-weight-medium;
+    line-height: 2rem;
+    letter-spacing: 0.16667em;
+}
